@@ -8,7 +8,7 @@ const http_1 = __importDefault(require("http"));
 const cors_1 = __importDefault(require("cors"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const db_1 = __importDefault(require("./config/db"));
-const auth_routes_1 = __importDefault(require("../Backend/routes/auth.routes"));
+const auth_routes_1 = __importDefault(require("../dist/routes/auth.routes"));
 const socket_1 = require("./socket/socket");
 const PORT = process.env.PORT || 3000;
 dotenv_1.default.config();

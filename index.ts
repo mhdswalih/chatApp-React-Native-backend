@@ -14,9 +14,6 @@ app.use(express.json());
 app.use(cors());
 
 app.use('/auth',authRouter)
-app.get("/",(req,res) => {
-    res.send("/")
-})
 
 const server = http.createServer(app);
 initializeSocket(server)
